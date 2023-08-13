@@ -1,0 +1,140 @@
+.container {
+    position: absolute;
+    background-color: #4a98f7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+}
+.left, .right{
+    width: calc(50% - 60px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.text {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    font-family: Arial, serif;
+    margin: 20px;
+    width: calc(88% - 40px);
+    line-height: 1.4;
+}
+.border {
+    background-color: white;
+    width: 2%;
+    height: 70%;
+    border-radius: 10px;
+}
+.right {
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+.image, .real-time, .all-buttons, .set {
+    margin: 20px;
+    width: calc(90% - 40px);
+    text-align: center;
+    height: calc(100% /4 - 40px);
+}
+.image img {
+    position: relative;
+    width: 25%;
+    height: calc(100% + 30px);
+}
+.real-time {
+    margin-bottom: -20px;
+}
+.right p {
+    font-size: 3rem;
+}
+.hours-class, .minutes-class, .ampm-class {
+    position: relative;
+    display: inline-block;
+    width: calc(100% / 3 - 3px);
+    height: 100%;
+}
+.all-buttons button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    font-size: 18px;
+}
+.set button {
+    position: relative;
+    background-color: #4a98f7;
+    font-size: 25px;
+    color: white;
+    padding: 4%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    z-index: 0;
+}
+.hours-list {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    z-index: 0;
+    overflow-x: hidden;
+}
+.hours {
+    background-color: white;
+    padding: 4%;
+    border: 1px solid black;
+}
+.hours:hover{
+    background-color: lightgray;
+    scale: 1.2;
+    color: white;
+}
+.minutes-list {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.minutes {
+    background-color: white;
+    padding: 4%;
+    border: 1px solid black;
+}
+.minutes:hover{
+    background-color: lightgray;
+    scale: 1.2;
+    color: white;
+}
+.ampm-list {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.ampm {
+    background-color: white;
+    padding: 4%;
+    border: 1px solid black;
+}
+.ampm:hover{
+    background-color: lightgray;
+    scale: 1.2;
+    color: white;
+}

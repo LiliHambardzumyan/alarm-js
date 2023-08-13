@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "./style.css">
+    <title>Alarm</title>
+</head>
+<body>
+  <div class = "container">
+      <div class = "center">
+        <div class = "left">
+            <div class = "border"></div>
+            <div class = "text">
+                <p>Build An Alarm Clock JavaScript</p>
+            </div>
+        </div>
+        <div class = "right">
+            <div class = "image">
+                <img src = "./files/clock.png">
+            </div>
+            <div class = "real-time">
+                <p id = "time-text"></p>
+            </div>
+            <div class = "all-buttons">
+                <div class = "hours-class">
+                    <button id = "hours-button">
+                        Hours  <i class = "fa fa-caret-down" aria-hidden = "true"></i>
+                    </button>
+                    <ul class = "hours-list"></ul>
+                </div>
+                <div class = "minutes-class">
+                    <button id = "minutes-button">
+                        Minutes  <i class = "fa fa-caret-down" aria-hidden = "true"></i>
+                    </button>
+                    <ul class = "minutes-list"></ul>
+                </div>
+                <div class = "ampm-class">
+                    <button id = "ampm-button">
+                        AM/PM  <i class = "fa fa-caret-down" aria-hidden = "true"></i>
+                    </button>
+                    <ul class = "ampm-list"></ul>
+                </div>
+            </div>
+            <div class = "set">
+                <button id = "set-button">Set Alarm</button>
+            </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
+<script src = "./script.js"></script>
